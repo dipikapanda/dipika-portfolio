@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+
+    <img src="https://picsum.photos/300" alt="Album Cover" class="cover">
+
+    <h2>My Favorite Song</h2>
+    <p>Artist Name</p>
+
+    <audio id="audio">
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <input type="range" id="progress" value="0">
+
+    <div class="controls">
+        <button onclick="playMusic()">▶</button>
+        <button onclick="pauseMusic()">⏸</button>
+    </div>
+
+    <div class="volume-section">
+        🔊
+        <input type="range" id="volume" min="0" max="100" value="100">
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
